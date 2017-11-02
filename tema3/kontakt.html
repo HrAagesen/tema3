@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://use.fontawesome.com/a727efe8ae.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div>
+
+      <a href="index.html"><img src="img/logo2.png" alt="logo"></a>
+
+      <div id=mynav class=navi> <!--yderste lag-->
+        <a href="javascript:void(0)" class="closebut" onclick="closeNav()">&times;</a> <!-- knap til at lukke nav-->
+
+        <div class="overlayer"> <!--indhold i yderste lag-->
+          <a href="index.html">Forside</a>
+          <a href="mobler.html">Møbler</a>
+          <a href="inspiration.html">Inspiration</a>
+          <a href="vedligeholdelse.html">Vedligeholdelse</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+
+      </div>
+
+      <span onclick="openNav()">☰</span> <!--open nav-->
+
+      <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+
+    </div>
+
+    <nav>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="vedligeholdelse.html">Vedligeholdelse</a></li>
+      <li><a href="inspiration.html">Inspiration</a></li>
+      <li><a href="mobler.html">Møbler</a></li>
+      <li><a href="index.html">Forside</a></li>
+    </nav>
+
+  </header>
+
+  <div id="Billede5">
+  <img src="img/imgkontakt/topKontakt.jpg" alt="topKontakt" style="width: 100%;">
+
+  <div class="Overskrift2">
+  <h3 class="vedligeholdelse" >KONTAKT & ÅBNINGSTIDER</h3></div>
+  <div class="tekst3">
+  <p class="vedligeholdelse" >DesignKlassiker</p>
+  <p class="vedligeholdelse" >Lyngvej 19</p>
+  <p class="vedligeholdelse" >4600 Køge</p>
+  <p class="vedligeholdelse" >Tlf: +45 91 41 81 89
+  <p class="vedligeholdelse" >Mail: info@DesignKlassiker.dk</p>
+  <p class="vedligeholdelse" >ÅBNINGSTIDER</p>
+  <p class="vedligeholdelse" >Mandag - Fredag 10-20</p>
+  <p class="vedligeholdelse" >Lørdag - Søndag 10-17</p>
+  </div>
+
+  <footer>
+    <p><a href="kontakt.html">Kontakt</a></p>
+    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+  </footer>
+
+<script> /* javascript til at åbne menuen, når der klikkes på ☰-*/
+function openNav(){
+  document.getElementById("mynav").style.width = "100%";
+}
+function closeNav(){ /*javascript til at lukke menuen når der trykkes på x */
+  document.getElementById("mynav").style.width = "0%";
+}
+
+</script>
+
+</body>
+</html>

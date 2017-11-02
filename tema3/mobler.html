@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://use.fontawesome.com/a727efe8ae.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div>
+
+      <a href="index.html"><img src="img/logo2.png" alt="logo"></a>
+
+      <div id=mynav class=navi> <!--yderste lag-->
+        <a href="javascript:void(0)" class="closebut" onclick="closeNav()">&times;</a> <!-- knap til at lukke nav-->
+
+        <div class="overlayer"> <!--indhold i yderste lag-->
+          <a href="index.html">Forside</a>
+          <a href="mobler.html">Møbler</a>
+          <a href="inspiration.html">Inspiration</a>
+          <a href="vedligeholdelse.html">Vedligeholdelse</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+
+      </div>
+
+      <span onclick="openNav()">☰</span> <!--open nav-->
+
+      <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+
+    </div>
+
+    <nav>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="vedligeholdelse.html">Vedligeholdelse</a></li>
+      <li><a href="inspiration.html">Inspiration</a></li>
+      <li><a href="mobler.html">Møbler</a></li>
+      <li><a href="index.html">Forside</a></li>
+    </nav>
+
+  </header>
+
+  <div class="indholdmobler">
+    <img class="topmobler" src="img/imgmobler/topmobler.jpg" alt="sofa, stole og et bord">
+    <p class="overskriftmobler" >Møbler</p>
+    <figure>
+      <img src="img/imgmobler/aj.jpg" alt="stol">
+      <figcaption class="navnmobler" >indsæt navn</figcaption>
+      <figcaption class="prismobler" >indsæt pris</figcaption>
+    </figure>
+    <figure>
+      <img src="img/imgmobler/bord.jpg" alt="bord">
+      <figcaption class="navnmobler" >indsæt navn</figcaption>
+      <figcaption class="prismobler" >indsæt pris</figcaption>
+    </figure>
+    <figure>
+      <img src="img/imgmobler/gyngestol.jpg" alt="gyngestol">
+      <figcaption class="navnmobler" >indsæt navn</figcaption>
+      <figcaption class="prismobler" >indsæt pris</figcaption>
+    </figure>
+    <figure>
+      <img src="img/imgmobler/skab.jpg" alt="skab">
+      <figcaption class="navnmobler" >indsæt navn</figcaption>
+      <figcaption class="prismobler" >indsæt pris</figcaption>
+    </figure>
+    <figure>
+      <img src="img/imgmobler/teakstol.jpg" alt="teak stol">
+      <figcaption class="navnmobler" >indsæt navn</figcaption>
+      <figcaption class="prismobler" >indsæt pris</figcaption>
+    </figure>
+    <figure>
+      <img src="img/imgmobler/sofabord.jpg" alt="sofabord">
+      <figcaption class="navnmobler" >indsæt navn</figcaption>
+      <figcaption class="prismobler" >indsæt pris</figcaption>
+    </figure>
+    <figure>
+      <img src="img/imgmobler/tostole.jpg" alt="to stole">
+      <figcaption class="navnmobler" >indsæt navn</figcaption>
+      <figcaption class="prismobler" >indsæt pris</figcaption>
+    </figure>
+    <figure>
+      <img src="img/imgmobler/treben.jpg" alt="trebenet stol">
+      <figcaption class="navnmobler" >indsæt navn</figcaption>
+      <figcaption class="prismobler" >indsæt pris</figcaption>
+    </figure>
+  </div>
+
+  <footer>
+    <p><a href="kontakt.html">Kontakt</a></p>
+    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+  </footer>
+
+<script> /* javascript til at åbne menuen, når der klikkes på ☰-*/
+function openNav(){
+  document.getElementById("mynav").style.width = "100%";
+}
+function closeNav(){ /*javascript til at lukke menuen når der trykkes på x */
+  document.getElementById("mynav").style.width = "0%";
+}
+
+</script>
+
+</body>
+</html>

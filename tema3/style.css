@@ -1,0 +1,337 @@
+*{
+  box-sizing: border-box;
+  font-family: "open sans";
+}
+
+/*Wrapper*/
+body{
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+/*Wrapper slut*/
+
+header i{
+  margin: 5vh 5% 5vh 0;
+  float: right;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+a{
+  color: rgb(18, 73, 88);
+  text-decoration: none;
+}
+
+.linkbillederforside{
+  max-width: 25vw;
+  margin: 0 4vw;
+}
+
+.komnu{
+  display: flex;
+  justify-content: space-between;
+}
+
+#Billede1{
+margin-left: auto;
+margin-top: 15vh;
+
+}
+
+#Billede5 img {
+margin-left: auto;
+margin-top: 15vh;
+}
+
+.tester{
+
+}
+
+.Overskrift {
+margin-top:auto;
+padding: 0px;
+color:#58583;
+font-family: Arial;
+font-size: 14px;
+}
+.Overskrift2 {
+  margin-top:auto;
+  padding: 0px;
+  color:#58583;
+  font-family: Arial;
+  font-size: 18px;
+}
+.tekst1 {
+color: #000000;
+font-size: 14px;
+font-family: Arial;
+}
+
+.tekst2 {
+color: #000000;
+font-size: 14px;
+font-family: Arial;
+}
+.tekst3 {
+color: #000000;
+font-size: 14px;
+font-family: Arial;
+}
+
+/*styre logoet*/
+header img{
+  width: 25%;
+  height: auto;
+  float: left;
+  margin: 2% 4%;
+  min-width: 150px
+}
+/*logo slut*/
+
+/*Mikkel - vedligeholdelse*/
+.toppic{
+  display: block;
+  clear: both;
+  width: 100%;
+  margin: 15vh auto 2% auto;
+  max-width: 1000px;
+}
+
+.tester123{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: auto;
+}
+
+.vedligeholdelse{
+  width: 90%;
+  max-width: 1000px;
+  margin: 2% auto;
+}
+
+.vedligeholdpic{
+  max-width: 100%;
+  height: auto;
+  /*float: left;*/
+  margin-right: 2%;
+  padding: 2% 2% 0% 0%;
+}
+.vedlige{
+  width: 80%;
+  margin: 2% 3.333333333%;
+  text-align: center;
+  clear: both;
+}
+
+.pleje{
+  display: block;
+  width: 100%;
+  margin: 5% auto;
+}
+/*Mikkel - vedligeholdelse slut*/
+
+/*Nye ting der skal tilføjes -----------------------*/
+.indholdmobler{
+  margin-top: 30%;
+}
+
+.topmobler{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.overskriftmobler{
+  font-size: 2em;
+  margin: 0.1em;
+  color: rgb(163, 88, 34);
+  text-align: center;
+}
+
+figure{
+  display: block;
+  float: left;
+  max-width: 45vw;
+  margin: 1em 2.5vw;
+}
+
+figure img{
+  max-width: 100%;
+}
+
+figcaption{
+  text-align: center;
+}
+
+.navnmobler{
+  color: rgb(163, 88, 34);
+}
+
+.prismobler{
+  color: rgb(18, 73, 88);
+}
+
+/*Nye ting der skal tilføjes slut -----------------------*/
+
+footer{
+  text-align: center;
+  bottom: 3%;
+  max-width: 1200px;
+  width: 100%;
+  clear: both;
+  /*position: absolute; (den skal fjernes) -----------------------*/
+  border-top: 1px solid rgb(198, 198, 198);
+}
+
+footer p{
+  display: inline;
+  font-size: 1.1em;
+  margin-right: 2%;
+}
+
+footer p a{
+  color: rgb(18, 73, 88);
+  text-decoration: none;
+}
+
+footer i{
+  margin-top: 3%;
+}
+
+/*hamburger menu starter her*/
+.navi{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  }
+/*hvordan ser indholdet ud i hamburgermenuen*/
+.overlayer{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 10%;
+  margin-top: 30px;
+}
+/*hvordan linkene ser ud i overlay*/
+.navi a{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+/*giver farve nÃ¥r der holdes over indholdet*/
+.navi a:hover .navi a:focus{
+  color: #f1f1f1;
+}
+/*position af x/lukke knappen i menuen*/
+.navi .closebut{
+  position: absolute;
+  top: 15px;
+  right: 5%;
+  padding: 0;
+  font-size: 60px;
+}
+
+span{
+  display: block;
+  font-size: 2.5em;
+  color: #07395a;
+  cursor: pointer;
+  float: right;
+  margin: 3vh 5vh;
+  }
+  /*menuen slutter her*/
+
+  /*fjerner navigations*/
+  nav{
+    display: none;
+  }
+
+
+@media screen and (min-width: 580px) {
+
+header{
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+header i{
+  float: right;
+  margin-top: 5%;
+  margin-right: 6%;
+}
+
+nav{
+  display: block;
+  clear: both;
+}
+
+nav li{
+  float: right;
+  list-style: none;
+  margin: 1% 2%;
+}
+
+nav li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(163, 88, 34);
+}
+
+/*slutter navigation*/
+Span{
+  display: none;
+  }
+/* Nye ting der skal tilføjes ------------------------- */
+  figure{
+    display: block;
+    float: left;
+    max-width: 20%;
+    margin: 1em 2.5%;
+  }
+
+  header{
+    position: relative;
+  }
+
+  .indholdmobler{
+    margin-top: 8%;
+  }
+/* Nye ting der skal tilføjes slut ------------------------- */
+/*Mikkel - vedligeholdelse*/
+.vedligeholdpic{
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin-right: 2%;
+  padding: 2% 2% 0% 0%;
+}
+
+.toppic{
+  margin-top: 2%;
+}
+
+.vedlige{
+  width: 80%;
+  margin: 3%;
+  text-align: center;
+  clear: none;
+}
+/*Mikkel - vedligeholdelse slut*/
+
+}

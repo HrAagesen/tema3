@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://use.fontawesome.com/a727efe8ae.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div>
+
+      <a href="index.html"><img class="logo" src="img/logo2.png" alt="logo"></a>
+
+      <div id=mynav class=navi> <!--yderste lag-->
+        <a href="javascript:void(0)" class="closebut" onclick="closeNav()">&times;</a> <!-- knap til at lukke nav-->
+
+        <div class="overlayer"> <!--indhold i yderste lag-->
+          <a href="index.html">Forside</a>
+          <a href="mobler.html">Møbler</a>
+          <a href="inspiration.html">Inspiration</a>
+          <a href="vedligeholdelse.html">Vedligeholdelse</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+
+      </div>
+
+      <span onclick="openNav()">☰</span> <!--open nav-->
+
+      <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+
+    </div>
+
+    <nav>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="vedligeholdelse.html">Vedligeholdelse</a></li>
+      <li><a href="inspiration.html">Inspiration</a></li>
+      <li><a href="mobler.html">Møbler</a></li>
+      <li><a href="index.html">Forside</a></li>
+    </nav>
+
+  </header>
+
+  <artikel>
+
+      <img class="toppic" src="./img/imgvedligeholdelse/topvedligeholdelse.jpg" alt="interior rep">
+
+      <div class="vedligeholdelse">
+      <p class="pleje">
+        Vedligeholdelse og pleje af dine møbler er vigtigt for at det kan bevare sin glans og være smukt mange år frem.
+        Derfor har vi hos Design Klassiker lavet lette pakker til nem vedligeholdelse af dine møbler.
+        Slidtage mindskes og værdien bevares samtidig med at man som ejer danner sig et tættere emotioneltbånd med sit eje.
+        <br>
+        <br>
+        Du kan læse mere om vores pakker her eller du kan ringe til os <a href="kontakt.html">her</a> for personlig rådgivning,
+        hvis du har spørgsmål du ønsker besvaret.
+      </p>
+      <section>
+        <div class="tester123">
+        <figure class="vedlige" >
+          <img class="vedligeholdpic" src="./img/imgvedligeholdelse/lader.jpg" alt="læder">
+          <figcaption>Vi har et stort ud valg af læder til reperation
+              og vedligeholdelse til dine møbler.</figcaption>
+        </figure>
+
+        <figure class="vedlige">
+          <img class="vedligeholdpic" src="./img/imgvedligeholdelse/snore.jpg" alt="snore">
+          <figcaption>Vi har stort og varieret udvalg i snøre
+             til vedligeholdelse og reperation.</figcaption>
+        </figure>
+
+        <figure class="vedlige">
+          <img class="vedligeholdpic" src="./img/imgvedligeholdelse/varksted.jpg" alt="værksted">
+          <figcaption>Vi har et værksted med autoriseret
+            personale, der kan reperare og vedligeholde dine møbler i høj kvalitet. Der følger garanti med på alt vores arbejde.</figcaption>
+        </figure>
+        </div>
+      </section>
+      <!--  <p class="vedholdinfo"> <img class="vedligeholdpic" src="./img/imgvedligeholdelse/lader.jpg" alt="læder"> Vi har et stort ud valg af læder til reperation
+          og vedligeholdelse til dine møbler.
+        </p>
+
+        <p class="vedholdinfo"> <img class="vedligeholdpic" src="./img/imgvedligeholdelse/snore.jpg" alt="snore"> Vi har stort og varieret udvalg i snøre
+           til vedligeholdelse og reperation.</p>
+
+
+           <p class="vedholdinfo"><img class="vedligeholdpic" src="./img/imgvedligeholdelse/varksted.jpg" alt="værksted"> Vi har et værksted med autoriseret
+             personale, der kan reperare og vedligeholde dine møbler i høj kvalitet. Der følger garanti med på alt vores arbejde.
+           </p>
+         -->
+         </div>
+  </artikel>
+
+
+  <footer>
+    <p><a href="kontakt.html">Kontakt</a></p>
+    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+  </footer>
+
+<script> /* javascript til at åbne menuen, når der klikkes på ☰-*/
+function openNav(){
+  document.getElementById("mynav").style.width = "100%";
+}
+function closeNav(){ /*javascript til at lukke menuen når der trykkes på x */
+  document.getElementById("mynav").style.width = "0%";
+}
+
+</script>
+
+</body>
+</html>
